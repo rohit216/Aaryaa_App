@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "319227914193",
+    "firebase_url": "https://aaryaaapp.firebaseio.com",
+    "project_id": "aaryaaapp",
+    "storage_bucket": "aaryaaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319227914193:android:6a0aa1850e999388",
+        "android_client_info": {
+          "package_name": "com.example.kanchan.aaryaa_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319227914193-645pi222f6rpebukmmqsqfo4s0fo531p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kanchan.aaryaa_app",
+            "certificate_hash": "7af12044d13e14ee29fefa937a8a7473e3ac0bdb"
+          }
+        },
+        {
+          "client_id": "319227914193-kn7deu2knvj936gcqqi12j8e62pd1d8l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kanchan.aaryaa_app",
+            "certificate_hash": "74b0ca938f998657e6a6e2c93d6cf2ec3319db50"
+          }
+        },
+        {
+          "client_id": "319227914193-8rmfrhgj9rhhub49fnqovms7npqsnkgc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPQfVvkkXFfIK4FMMXV-CJ1GdOP52P1Hw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319227914193-8rmfrhgj9rhhub49fnqovms7npqsnkgc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

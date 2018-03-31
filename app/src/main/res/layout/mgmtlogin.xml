@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:src="@drawable/aaryaalogo"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="320sp"
+            android:layout_marginTop="30sp"
+            android:layout_height="250sp"
+            app:cardBackgroundColor="#fff"
+            android:elevation="40sp"
+            android:layout_gravity="center"
+            app:cardElevation="40sp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Spinner
+                android:autofillHints="Select Your Role"
+                android:id="@+id/spinnerMgmt"
+                android:layout_marginTop="5sp"
+                android:layout_width="match_parent"
+                android:layout_height="50sp">
+
+            </Spinner>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:textColor="#000"
+                    android:inputType="text"
+                    android:id="@+id/mgmtUsername"
+                    android:textColorHint="#000"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95sp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textColor="#000"
+                    android:id="@+id/mgmtPassword"
+                    android:textColorHint="#000"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="130sp"
+                android:layout_height="55sp"
+                android:background="#117aa2"
+                android:textColor="#fff"
+                android:onClick="mgmtLogin"
+                android:id="@+id/mgmtLoginButton"
+                android:layout_marginTop="75sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Login"
+                />
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>

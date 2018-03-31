@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="50sp"
+    android:layout_height="250sp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:elevation="40sp"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter verification code"
+        android:inputType="number"
+        android:textColor="#000"
+        android:id="@+id/editEnteredCode"
+        android:textColorHint="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:elevation="40sp"
+        android:layout_width="130sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="verifyCode"
+        android:layout_marginTop="20sp"
+        android:text="Verify"
+        android:textColor="#fff"
+        android:background="#117aa2"/>
+</LinearLayout>

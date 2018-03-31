@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.kanchan.aaryaa_app.RequestComplaint">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Complaint Registration"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_marginTop="15sp"
+        android:textSize="20sp"/>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="350dp"
+        app:mtf_cardCollapsedHeight="4dp"
+        android:layout_marginTop="15sp"
+        android:background="#f5f5f5"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="#117aa2"
+        android:layout_gravity="center"
+        app:mtf_animationDuration="1000"
+        app:mtf_image="@drawable/home">
+
+        <EditText
+            android:background="#fff"
+            android:elevation="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="#000"
+            android:textSize="15sp"/>
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="350dp"
+        android:layout_marginTop="15sp"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="#117aa2"
+        android:background="#fff"
+        android:layout_gravity="center"
+        app:mtf_animationDuration="1000"
+        app:mtf_image="@drawable/home"
+        android:elevation="5sp"
+        >
+
+        <EditText
+            android:background="#fff"
+            android:elevation="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="#000"/>
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="350dp"
+        android:layout_marginTop="15sp"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="#117aa2"
+        android:background="#fff"
+        android:layout_gravity="center"
+        app:mtf_animationDuration="1000"
+        app:mtf_image="@drawable/home"
+        android:elevation="5sp"
+        >
+
+        <EditText
+            android:background="#fff"
+            android:elevation="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="#000"/>
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="350dp"
+        android:layout_marginTop="15sp"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="#117aa2"
+        android:background="#fff"
+        android:layout_gravity="center"
+        app:mtf_animationDuration="1000"
+        app:mtf_image="@drawable/home"
+        android:elevation="5sp"
+        >
+
+        <EditText
+            android:background="#fff"
+            android:elevation="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="#000"/>
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="60sp"
+        android:background="#117aa2"
+        android:text="Register"
+        android:gravity="center"
+        android:layout_marginTop="15sp"
+        android:layout_gravity="center"
+        android:textColor="#fff"/>
+      </LinearLayout>
+   </ScrollView>
+    </LinearLayout>

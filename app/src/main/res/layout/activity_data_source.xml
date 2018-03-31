@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kanchan.aaryaa_app.DataSourceActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stateDialog"
+                android:hint="Maharashtra"
+                android:textColorHint="#000"
+                android:textSize="20sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/districtDialog"
+                android:hint="Sangli"
+                android:textColorHint="#000"
+                android:textSize="20sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/centerDialog"
+                android:hint="WHLSAN"
+                android:textColorHint="#000"
+                android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminUname"
+                android:hint="MHSAN181"
+                android:textColorHint="#000"
+                android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminPass"
+            android:hint="WHLSAN181"
+            android:textColorHint="#000"
+            android:textSize="20sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stateCode"
+            android:hint="State Code (MH)"
+            android:textColorHint="#000"
+            android:textSize="20sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/districtCode"
+            android:hint="District Code(SN)"
+            android:textColorHint="#000"
+            android:textSize="20sp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+            android:shadowColor="#000"
+            android:elevation="30sp"
+            android:layout_width="200sp"
+            android:layout_height="60sp"
+            android:background="#117aa1"
+            android:gravity="center"
+            android:id="@+id/saveDetails"
+            android:onClick="saveDetails"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:text="Save Details"
+            android:textColor="#fff"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_signOut"
+        android:orderInCategory="100"
+        android:title="Sign Out"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="100"
+        android:title="Profile"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/action_addStaff"
+        android:orderInCategory="100"
+        android:title="Add Staff"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/action_addManagement"
+        android:orderInCategory="100"
+        android:title="Add Management Committee"
+        app:showAsAction="withText" />
+
+
+
+
+</menu>

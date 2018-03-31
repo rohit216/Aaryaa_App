@@ -1,0 +1,84 @@
+plugins {
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin' version '0.8.1'
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    apply plugin: 'com.android.application'
+    repositories {
+        maven { url 'https://maven.google.com' }
+    }
+
+    android {
+        compileSdkVersion 27
+        defaultConfig {
+            applicationId "com.example.kanchan.aaryaa_app"
+            minSdkVersion 19
+            targetSdkVersion 27
+            multiDexEnabled true
+            versionCode 1
+            versionName "1.0"
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            manifestPlaceholders = [onesignal_app_id               : "8f969427-ddbc-41d2-a003-b2f0742f8296",
+                                    // Project number pulled from dashboard, local value is ignored.
+                                    onesignal_google_project_number: "319227914193"]
+        }
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+
+            packagingOptions {
+                exclude 'META-INF/LICENSE'
+                exclude 'META-INF/LICENSE-FIREBASE.txt'
+                exclude 'META-INF/NOTICE'
+            }
+        }
+    }
+
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation 'com.android.support:appcompat-v7:26.1.0'
+        implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+        compile 'com.google.firebase:firebase-database:11.0.4'
+        compile 'com.google.firebase:firebase-auth:11.0.4'
+        compile 'com.android.support:cardview-v7:25.2.0'
+        compile 'com.android.support:support-v4:25.2.0'
+        compile 'com.android.support:recyclerview-v7:25.2.0'
+        compile 'com.google.firebase:firebase-core:11.0.4'
+        compile 'com.google.firebase:firebase-messaging:11.0.4'
+        compile 'com.google.android.gms:play-services-auth:11.0.4'
+        compile 'com.google.firebase:firebase-storage:11.0.4'
+        compile 'com.squareup.picasso:picasso:2.5.2'
+        compile 'com.google.android.gms:play-services:11.0.4'
+        compile 'com.google.android.gms:play-services-maps:11.0.4'
+        compile 'com.google.android.gms:play-services-places:11.0.4'
+        compile 'com.google.android.gms:play-services-nearby:11.0.4'
+        compile 'com.firebaseui:firebase-ui:0.6.0'
+        compile 'com.android.support:multidex:1.0.0'
+        compile 'com.nineoldandroids:library:2.4.0'
+        compile 'de.hdodenhof:circleimageview:2.2.0'
+        compile 'com.onesignal:OneSignal:[3.8.3, 3.99.99]'
+        compile 'com.mcxiaoke.volley:library:1.0.19'
+        compile 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+        implementation 'com.android.support:design:26.1.0'
+        compile 'com.github.florent37:materialtextfield:1.0.7'
+        compile files('libs/mail.jar')
+        testImplementation 'junit:junit:4.12'
+        androidTestImplementation 'com.android.support.test:runner:1.0.1'
+        androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+        compile 'com.github.clans:fab:1.6.4'
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:27.+'
+    implementation 'com.google.firebase:firebase-database:11.0.4'
+    implementation 'com.google.firebase:firebase-auth:11.0.4'
+}
+apply plugin: 'com.google.gms.google-services'

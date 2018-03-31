@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="320sp"
+            android:layout_marginTop="0sp"
+            android:layout_height="300sp"
+            app:cardBackgroundColor="#fff"
+            android:elevation="40sp"
+            android:layout_gravity="center"
+            app:cardElevation="40sp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Old Password"
+                    android:textColor="#000"
+                    android:inputType="textPassword"
+                    android:id="@+id/adminOldPass"
+                    android:textColorHint="#000"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80sp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="New Password"
+                    android:textColor="#000"
+                    android:inputType="textPassword"
+                    android:id="@+id/adminNewPass"
+                    android:textColorHint="#000"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140sp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:textColor="#000"
+                    android:inputType="textPassword"
+                    android:id="@+id/adminConfirmPass"
+                    android:textColorHint="#000"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="140sp"
+                android:layout_height="55sp"
+                android:background="#117aa2"
+                android:textColor="#fff"
+                android:id="@+id/adminChngePButton"
+                android:layout_marginTop="230sp"
+                android:gravity="center"
+                android:layout_marginLeft="100sp"
+                android:text="Change"
+                />
+
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

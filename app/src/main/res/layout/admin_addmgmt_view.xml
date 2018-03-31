@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="320sp"
+            android:layout_marginTop="0sp"
+            android:layout_height="450sp"
+            app:cardBackgroundColor="#fff"
+            android:elevation="40sp"
+            android:layout_gravity="center"
+            app:cardElevation="40sp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp">
+
+                <Spinner
+                    android:autofillHints="Select Your Role"
+                    android:id="@+id/addMgmtRole"
+                    android:layout_marginTop="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp">
+
+                </Spinner>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80sp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:textColor="#000"
+                    android:id="@+id/addMgmtName"
+                    android:textColorHint="#000"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140sp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColor="#000"
+                    android:inputType="textEmailAddress|textAutoComplete"
+                    android:id="@+id/addMgmtEmail"
+                    android:textColorHint="#000"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200sp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact Number "
+                    android:textColor="#000"
+                    android:id="@+id/addMgmtContact"
+                    android:textColorHint="#000"
+                    android:inputType="number|textAutoComplete"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="260sp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Office Address"
+                    android:textColor="#000"
+                    android:inputType="textAutoComplete"
+                    android:id="@+id/addMgmtAddress"
+                    android:textColorHint="#000"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:layout_width="140sp"
+                android:layout_height="55sp"
+                android:background="#117aa2"
+                android:textColor="#fff"
+                android:id="@+id/addMgmtButton"
+                android:layout_marginTop="200sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="45dp"
+                android:text="Add"
+                />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
